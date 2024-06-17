@@ -1,0 +1,149 @@
+body{
+    background-image: url('newbgforger.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    /* Ensure that the pseudo-element is positioned relative to the body */
+    margin: 0;
+    /* Remove any default margin */
+    height: 100vh;
+    /* Ensure the body takes the full height of the viewport */
+    overflow: auto;
+    /* Prevent scrolling */
+    z-index: 999;
+      
+}
+
+
+ html,
+ body {
+     font-family: "Poppins", sans-serif;
+    
+     /* Prevent horizontal scroll */
+ }
+
+
+ .card{
+    padding:30px;
+    
+    
+ }
+
+ .text-desc{
+    text-align: center;
+
+ }
+
+ .float-icon{
+    position: relative;
+    margin-top: 70px;
+    background-color: #ede0d4;
+    border-radius: 200px;
+ }
+
+ .big-title{
+    font-size: 70px;
+    font-weight: bolder;
+    font-family: wedding;
+
+ }
+
+ .desc-title{
+    font-size: 20px;
+
+ }
+
+ .for-visit{
+    background-color: #7f5539;
+    padding: 10px;
+    width: 300px;
+    border-radius: 24px;
+    color: white;
+ }
+
+ .card-in-visitor{
+    background-color: #9c6644;
+    padding: 12px;
+    border-radius: 34px;
+    color:white;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+ }
+
+
+ .for-image-sec{
+   height: 100%;
+
+ }
+
+
+ /* for image */
+
+ .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+ }
+
+ /* Create four equal columns that sits next to each other */
+ .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+ }
+
+ .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+ }
+
+ /* Responsive layout - makes a two column-layout instead of four columns */
+ @media screen and (max-width: 800px) {
+    .column {
+       flex: 50%;
+       max-width: 50%;
+    }
+ }
+
+ /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 600px) {
+    .column {
+       flex: 100%;
+       max-width: 100%;
+    }
+ }
+
+
+      .navbar-nav img {
+         height: 160px;
+      }
+   
+      @media (max-width: 992px) {
+         .navbar-nav img {
+            height: 100px;
+            display: none;
+         }
+         
+      
+      }
+
+    
+
+      .text-desc-in-head{
+         text-justify: inter-word;
+         text-align: justify;
+         
+      }
+
+
+
+            .white-bg {
+               background: #e6ccb2 !important;
+               border-radius: 16px;
+               box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+               backdrop-filter: none;
+               -webkit-backdrop-filter: none;
+            }  
+    

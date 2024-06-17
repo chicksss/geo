@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- animation AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- icons -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <nav class="container navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Menu</a>
+        <a class="navbar-brand" href="#">Gallery</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarText"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item text-center">
+              <a class="nav-link" href="#">
+                <img src="newbg.png" alt="Logo" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a class="navbar-brand" href="#">Contact</a>
+        <a class="navbar-brand" href="#">About</a>
+      </div>
+    </nav> -->
+
+    <nav
+      id="navbar"
+      class="container navbar navbar-expand-lg navbar-light fixed-top"
+      style="
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.24);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2.3px);
+        -webkit-backdrop-filter: blur(2.3px);
+      "
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#"
+            ><img src="newbg.png" style="height: 50px; width: 50px"
+          /></a>
+          <div class="d-flex mx-auto">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              style="border-radius: 24px"
+            />
+            <button class="btn" type="submit">
+              <i class="bi bi-cart fs-5"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <br /><br /><br />
+    <br />
+
+    <script>
+      window.addEventListener("scroll", function () {
+        var navbar = document.getElementById("navbar");
+        if (window.scrollY > 50) {
+          // You can adjust the value 50 to the scroll position you want
+          navbar.classList.add("white-bg");
+        } else {
+          navbar.classList.remove("white-bg");
+        }
+      });
+    </script>
+
+    <section class="" style="height: 100%; margin-top: 50px">
+      <div
+        class="row d-flex justify-content-evenly"
+        style="margin: 0; padding: 0"
+      >
+        <div class="col-12 col-sm-6 col-md-4">
+          <h1
+            style="
+              font-weight: lighter;
+              font-family: wedding;
+              font-size: 60px;
+              color: #9c6644;
+            "
+          >
+            <span style="font-size: 30px">Welcome to</span>
+            <br />
+            <b class="fw-bold" style="color: #7f5539">Geo Cafe</b>
+          </h1>
+          <p class="text-desc-in-head" style="width: 100%">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            eius culpa, commodi qui nobis iste, atque accusamus ad amet modi
+            animi delectus consequatur natus doloremque. Maxime at veniam
+            suscipit dolore!
+          </p>
+          <br />
+
+          <div class="text-start">
+            <button
+              class="btn-sm"
+              style="
+                background-color: #834100;
+                padding: 10px;
+                color: rgb(255, 255, 255);
+                width: 300px;
+                border-radius: 24px;
+                border-color: rgba(0, 0, 0, 0);
+              "
+            >
+              Explore
+            </button>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4">
+          <img src="newbg.png" />
+        </div>
+      </div>
+    </section>
+
+    <section class="" style="height: 100%; background-color: #e6ccb2">
+      <div class="container">
+        <h1
+          style="
+            font-weight: lighter;
+            font-family: wedding;
+            font-size: 60px;
+            color: #7f5539;
+          "
+        >
+          Foods and Drinks
+        </h1>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="p-3 border bg-light">
+              <img src="n1.jpg" class="w-100" alt="" />
+              <div class="card-body">
+                <b>Burger</b>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Consequuntur blanditiis
+                </p>
+              </div>
+              <button
+                class="btn"
+                style="
+                  background-color: #9c6644;
+                  color: white;
+                  border-radius: 24px;
+                "
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="p-3 border bg-light">
+              <img src="n2.jpg" class="w-100" alt="" />
+              <div class="card-body">
+                <b>Fries</b>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Consequuntur blanditiis
+                </p>
+                <button
+                  class="btn"
+                  style="
+                    background-color: #9c6644;
+                    color: white;
+                    border-radius: 24px;
+                  "
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="p-3 border bg-light">
+              <img src="n3.jpg" class="w-100" alt="" />
+              <div class="card-body">
+                <b>Fried Fish and Egg</b>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Consequuntur blanditiis
+                </p>
+                <button
+                  class="btn"
+                  style="
+                    background-color: #9c6644;
+                    color: white;
+                    border-radius: 24px;
+                  "
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="p-3 border bg-light">
+              <img src="n4.jpg" class="w-100" alt="" />
+
+              <div class="card-body">
+                <b>Fried Egg</b>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Consequuntur blanditiis
+                </p>
+                <button
+                  class="btn"
+                  style="
+                    background-color: #9c6644;
+                    color: white;
+                    border-radius: 24px;
+                  "
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br /><br /><br />
+
+      <div
+        class="container-fluid"
+        style="background-color: #9c6644; padding: 20px"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-5">
+              <h1
+                style="
+                  font-weight: lighter;
+                  font-family: wedding;
+                  font-size: 60px;
+                  color: #fff1e8;
+                "
+              >
+                <span>Enjoy the view inside the</span>
+                <b style="font-weight: 900">Geo Cafe</b>
+              </h1>
+              <span style="color: #fff1e8">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                doloremque aliquid placeat atque eos accusamus quis iste dolor
+                porro deserunt aliquam recusandae ea iure error sapiente
+                voluptas, blanditiis nemo explicabo.
+              </span>
+            </div>
+            <div class="col-sm-7">
+              <img
+                src="back.jpg"
+                class="w-100"
+                style="border-radius: 24px"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center" style="background-color: #fff1e8; padding: 30px">
+        <h1
+          style="
+            font-weight: lighter;
+            font-family: wedding;
+            font-size: 60px;
+            color: #7f5539;
+            text-align: center;
+          "
+        >
+          <span>Contact Us</span>
+        </h1>
+        <div class="row mx-auto">
+          <div class="col">
+            <i class="bi bi-telephone-fill"></i>
+            <br />
+            (+63) 986774588
+          </div>
+          <div class="col">
+            <i class="bi bi-facebook"></i>
+            <br />
+            www.geocafefacebook.com
+          </div>
+          <div class="col">
+            <i class="bi bi-geo-alt-fill"></i>
+            <br />
+            Mangayao Bayambang Pangasinan
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+  </body>
+</html>
